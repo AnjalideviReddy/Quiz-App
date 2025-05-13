@@ -1,0 +1,115 @@
+/* ATS Keywords: HTML, CSS, Responsive Design, JavaScript, UI/UX, Transitions, Accessibility */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+.quiz-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.options-list li {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.options-list li:hover {
+  background: #dcdcdc;
+}
+
+.options-list li.correct {
+  background-color: #a1f0a1;
+}
+
+.options-list li.incorrect {
+  background-color: #f0a1a1;
+}
+
+.bottom-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  background-color: #4e8ef7;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#next-btn:hover {
+  background-color: #3b6ed4;
+}
+
+#timer {
+  font-size: 0.95em;
+  color: #333;
+}
+
+.result-box {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
